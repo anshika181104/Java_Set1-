@@ -29,12 +29,16 @@ public class Ques3{
         double pf = 0.11 * basic;
       
         double allowance;
-         if (grade == 'A'){
-            allowance = 1700.0;
-        } else if (grade == 'B') {
-            allowance = 1500.0;
-        } else {
-            allowance = 1300.0;
+        switch (grade) {
+            case 'A':
+                allowance = 1700.0;
+                break;
+            case 'B':
+                allowance = 1500.0;
+                break;
+            default:
+                allowance = 1300.0;
+                break;
         }
 
         double totalSalary = basic + hra + da + allowance - pf;
