@@ -22,14 +22,14 @@ public class Ques3{
         int basic = scanner.nextInt();
 
         System.out.print("Enter grade (A, B, C, or any other character): ");
-        char grade = scanner.next().charAt(0);
+         char grade = scanner.next().charAt(0);
 
         double hra = 0.2 * basic;
         double da = 0.5 * basic;
         double pf = 0.11 * basic;
-
+      
         double allowance;
-        if (grade == 'A') {
+         if (grade == 'A'){
             allowance = 1700.0;
         } else if (grade == 'B') {
             allowance = 1500.0;
