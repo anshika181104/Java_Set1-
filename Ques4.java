@@ -1,3 +1,11 @@
-public class Ques4 {
-    
+/*  Write a program that generates a multiplication table for a given integer. */
+
+public class Ques4{
+    public static void main(String[] args) {
+        int n = 2;
+        for (int i = 1; i <= 10; i++){
+            System.out.println(n + "*" + i + "=" + n*i);
+        }
+     
+    }
 }
